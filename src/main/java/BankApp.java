@@ -6,15 +6,20 @@ public class BankApp {
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("Hello in our bank!");
-
-        Account account = new Account();
-        account.createAccount();
+        System.out.println("How many users you want to add?");
+        int amountNewUsers = scanner.nextInt();
+        Account tableOfNewCustomer [] = new Account[amountNewUsers];
+        for (int i=0; i < tableOfNewCustomer.length; i++){
+            tableOfNewCustomer[i] = new Account();
+            tableOfNewCustomer[i].createAccount();
+            tableOfNewCustomer[i].showAccount();
+        }
 
 
         int choice;
         do {
 
-            System.out.println("1. Display account details");
+            System.out.println("1. Display all accounts");
             System.out.println("2. Deposit money");
             System.out.println("3. Withdrawal money");
             System.out.println("4. Exit appBank");
@@ -28,6 +33,12 @@ public class BankApp {
                     break;
 
                 case 2:
+                    System.out.println("Enter account number to deposit: ");
+                    int accountNumber = scanner.nextInt();
+                    boolean found = false;
+                    for (int i=0; i < tableOfNewCustomer.length; i++);{
+                        found = tableOfNewCustomer[String].search(accountNumber);
+                }
                     account.depositMoney();
                     break;
 
@@ -44,6 +55,16 @@ public class BankApp {
             while (choice != 4);
 
 
+    }
+
+    private static void search(String accountNumber) {
+        if (accountNumber.equals(accountNumber) {
+            return true;
+        }else {
+            return false}
+
+
+        }
     }
 
 }
