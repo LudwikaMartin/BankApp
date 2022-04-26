@@ -56,6 +56,6 @@ public class Account {
         System.out.println("How much you want to deposit?");
         long amount = scanner.nextLong();
         balance = balance + amount;
-        System.out.println("Your Current: "+ balance);
+        System.out.println("Your current balance: "+ balance);
     }
 }
