@@ -18,6 +18,9 @@ public class BankApp {
             case 1:
                 account.showAccount();
 
+            case 2:
+                account.depositMoney();
+
         }
     }
 

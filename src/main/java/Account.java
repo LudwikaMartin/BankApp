@@ -51,4 +51,11 @@ public class Account {
         System.out.println("Account number: " + accNumber);
         System.out.println("Balance: " + balance);
     }
+
+    public void depositMoney() {
+        System.out.println("How much you want to deposit?");
+        long amount = scanner.nextLong();
+        balance = balance + amount;
+        System.out.println("Your Current: "+ balance);
+    }
 }
